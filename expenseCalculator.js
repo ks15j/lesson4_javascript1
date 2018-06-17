@@ -38,7 +38,7 @@
                   var foodAmt = document.getElementById("foodInput").value;
                   var householdAmt = document.getElementById("householdInput").value;
                   var transportationAmt = document.getElementById("transportationInput").value;
-                  var miscellaneousAmt = document.getElementById("miscellaneousdInput").value;
+                  var miscellaneousAmt = document.getElementById("miscellaneousInput").value;
 
 
 
@@ -84,7 +84,7 @@
                   var foodPct;  //food category percentage
                   var householdPct; //household category percentage
                   var transportationPct; //transportation category percentage
-                  var miscellaneousPct; //miscellaneous categroy amount
+                  var miscellaneousPct; //miscellaneous category amount
                   
 
                   /******************************************************************************************************
@@ -109,7 +109,7 @@
                    *          Miscellaneous percentage (you must add). The result of the calculations are assigned to the 
                    *          variables declared in Task 4.  
                   *******************************************************************************************************/   
-
+                  totalExpenses = shelterAmt + foodAmt + householdAmt + transportationAmt + miscellaneousAmt;
 
                   shelterPct = 100 * (shelterAmt / totalExpenses);
                   foodPct = 100 * (foodAmt / totalExpenses);
@@ -142,9 +142,9 @@
                   document.getElementById("totalExpenses").innerHTML = "<b>Total Expenses:     $</b> " + totalExpenses.toFixed(2);
                   document.getElementById("shelterPercentage").innerHTML = "% for <b>shelter</b>:      " + shelterPct.toFixed(1);      
                   document.getElementById("foodPercentage").innerHTML = "% for <b>food:</b>      " + foodPct.toFixed(1);
-                  document.getElementById("householdPercentage").innerHTML = "% for <b>food:</b>      " + foodPct.toFixed(1);
-                  document.getElementById("foodPercentage").innerHTML = "% for <b>food:</b>      " + foodPct.toFixed(1);
-                  document.getElementById("foodPercentage").innerHTML = "% for <b>food:</b>      " + foodPct.toFixed(1);
+                  document.getElementById("householdPercentage").innerHTML = "% for <b>household:</b>      " + householdPct.toFixed(1);
+                  document.getElementById("transportationPercentage").innerHTML = "% for <b>transportation:</b>      " + transportationPct.toFixed(1);
+                  document.getElementById("miscellaneousPercentage").innerHTML = "% for <b>other:</b>      " + miscellaneousPct.toFixed(1);
          } //end of calculatePercentages function
          
 
@@ -174,7 +174,7 @@
                    *          the specified id and overwrite the existing values with the empty string.  This clears out the 
                    *          results.
 
-                  *************************************************************************************************************/                
+                  ***********************************************************************************************************/                
 
                   document.getElementById("totalExpenses").innerHTML = ""; 
                   document.getElementById("shelterPercentage").innerHTML = "";      
