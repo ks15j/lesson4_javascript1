@@ -13,8 +13,7 @@ Kristiana Stevens
 This project displays the percentage of the users expenses for multiple categories
 
 ### View Project:
-Replace this statement with your GitHub Page URL that was created when you 
- published the project.
+https://github.com/ks15j/lesson4_javascript1 
 
 ### Lessons Learned in the Assignment:
 1. I've learned the basics of java script through the program completed for assignment 4.
